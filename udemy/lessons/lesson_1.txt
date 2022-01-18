@@ -23,8 +23,22 @@
     Master
 
 Versions
+    Java SE7    // 07.07.2011
     Java SE8    // the last version 18.03.2014
 
+Лозунг Java
+    "Write Once, Run Anywhere"  
+    human.java  // сохраненный файл с кодом с расширением .java
+      |
+    javac       // компилятор javaс
+      |
+    human.class // на выходе byte code в файле .class
+      |
+    JVM         // виртуальная машина Java(интерпретатор) - вып машинный код
+    Запускается независимо от ОС.
 
+Функции/Методы
+    System.out.print("First text!");    // выводит на экран строку
+    System.out.println("First text!");  // выводит на экран строку с переносом
 
 
