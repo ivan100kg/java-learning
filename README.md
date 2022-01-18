@@ -1,1 +1,1 @@
-# java-learning
+# Udemy Java OCA course
