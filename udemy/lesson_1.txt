@@ -1,0 +1,30 @@
+--- Урок 1 Знакомство с Java. Методы print и println ---
+
+Редакции Java
+    Java Standart Edition(SE)   // стандартная редакция, для станд прил-ий
+    Java Enterprise Edition(EE) // редакция для прил масштаба предприятия
+    Java Micro Edition(ME)      // редакция для прил микрокомп-в (напр смартфон)
+
+Иерархия экзаменов
+    Oracle                      Java
+    Certified                   Associate
+    Associate                       |
+                                    |
+    Oracle                      Java
+    Certified                   Programmer
+    Programmer                      |
+                                    |
+    Oracle      Mobile      Web       JSP &     Enterprise Java
+    Certified   Application Services  Servlet   JavaBeans  Persistence
+    Expert      Developer   Developer Developer Developer  Developer
+                                    |
+    Oracle                  Enterprise Java
+    Certified               Architect  Developer
+    Master
+
+Versions
+    Java SE8    // the last version 18.03.2014
+
+
+
+
