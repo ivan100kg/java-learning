@@ -1,5 +1,7 @@
 --- Урок 1 Знакомство с Java. Методы print и println ---
 
+Java - a high-level, class-based, object-oriented programming language.
+
 Редакции Java
     Java Standart Edition(SE)   // стандартная редакция, для станд прил-ий
     Java Enterprise Edition(EE) // редакция для прил масштаба предприятия
@@ -22,12 +24,16 @@
     Certified               Architect  Developer
     Master
 
+    OCA 1Z0-808 // наш экзамен
+
 Versions
     Java SE7    // 07.07.2011
     Java SE8    // the last version 18.03.2014
 
 Лозунг Java
     "Write Once, Run Anywhere"  
+
+Работа Java
     human.java  // сохраненный файл с кодом с расширением .java
       |
     javac       // компилятор javaс
@@ -41,4 +47,11 @@ Versions
     System.out.print("First text!");    // выводит на экран строку
     System.out.println("First text!");  // выводит на экран строку с переносом
 
-
+Исходный код
+    package lesson1;
+    public class Test1 {
+	    public static void main(String[] args) {    // точка входа в прил
+            // my code here
+            System.out.println("Hello world!");     // тело ф-ии       
+	    }
+    }
