@@ -1,16 +1,26 @@
 // Примитивные типы данных. Понятие «переменная». Системы счисления.
 
 Primitive data types
-Numeric types   
-    integers:
-        byte        
-        short
-        int
-        long
-    floating-point:
-        float
-        double
-Character types
-        char 
-Bollean types
-        bool
+    types       size        range
+    ------------------------------------------------------------------
+    byte        8 bit       [-128;127] 
+    short       16 bit      [-32768;32767]
+    int         32 bit      [-2147483648;2147483647]
+    long        64 bit      [-9223372036854775808;9223372036854775807]
+    float       32 bit      [3.4e-38;3.4e+38]
+    double      64 bit      [1.7e-308;1.7e+308]
+    char        16 bit      [0;65535]
+    bool        strictly    {true, false}
+                undefined
+
+Переменные
+    long l1 = 10000000000L; // на конце ставим L/l для long, иначе получ-cя int
+    float f1 = 47.23F;      // для float на конце ставим F/f, иначе double.
+    char c3 = 300;          // помимо символов - номер символа Юникода
+    char c4 = '\u0500';     // 16-рич система
+
+Системы исчисления
+   int a = 0b1000;          // двоичная система - число 8
+   int a = 074;             // восьмеричная си
+   int a = 0x3C;            // 16-ричная
+   
