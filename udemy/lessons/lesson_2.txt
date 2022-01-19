@@ -1,0 +1,16 @@
+// Примитивные типы данных. Понятие «переменная». Системы счисления.
+
+Primitive data types
+Numeric types   
+    integers:
+        byte        
+        short
+        int
+        long
+    floating-point:
+        float
+        double
+Character types
+        char 
+Bollean types
+        bool
