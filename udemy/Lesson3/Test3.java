@@ -5,6 +5,8 @@ public class Test3 {
         int a = 5;
         int b = a;
         
+        int x = 1, y = 2;   // неск переменных int
+        
         System.out.println(b);
     }
 }
