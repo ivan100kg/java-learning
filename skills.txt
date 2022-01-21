@@ -1,0 +1,23 @@
+Skills for Java-developer
+
+Java 8+(core, collections, exceptions, OOP, JDBC, multithreading, stream api..)
+Git, Jirа, Gradle, Maven, Confluence
+SQL, Hibernate, Oracle, PostgreSQL, Liquibase
+Хорошее знание сетевых технологий, HTTP(S), TCP, DNS.
+Docker, OpenShift, Kubernetes
+WebServices (SOAP/REST);
+Spring (Core, Boot, Data, Web, Orm, Security, Test, MVC, JDBC)
+Junit, TestNG
+фронтенд, React
+разработки ПО Agile, Scrum, Waterfall
+Bitbucket, Jenkins
+Java EE;
+SOLID, паттерны проектирования
+структуры данных и алгоритмы
+JMS, JAX-WS
+Linux
+Ignite
+groovy
+Apache Kafka/Kafka Streams
+ELK - Elasticsearch, Logstash, Kibana;
+Hadoop, Hive, HDFS;
