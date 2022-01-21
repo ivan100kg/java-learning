@@ -1,7 +1,32 @@
 // Понятия «класс» и «объект». Знакомство со ссылочными типами данных
 
-Структура
+Структура файла Lesson3.java
     package mypackage;      // пакет
     import java.util.*;     // импорт
-    public class Lesson3 {  // наш класс(data, methods, constructors)
-    public static void main(String[] args) {
+    public class Lesson3 {} // наш класс(data, methods, constructors)
+                               public название_класса == название файла
+                               только 1 public class может быть в файле или
+                               не быть вообще, тогда имя файла должно == хоть
+                               какому-ниб классу в файле
+    class Test {            // еще 1 класс в файле
+        int id=0;           // аттрибуты класса, изменить знач по умолчанию
+        String name;        // объекты этого класса можно создавать в других
+        double balance;        классах в функции main
+    {
+
+    public static void main(String[] args)  // точка входа в программу
+                                               должна присутствовать для запуска
+                                               программы. Может находится в люб
+                                               классе.
+
+Ссылочые типы данных
+    String s = "haha";      // строки
+    String s = new String()    2 способа создания только для String
+    Test tObj = new Test(); // объект класса, остальные создаются с new
+
+Дефолтные значения типов данных аттриб создаваемых в классах
+    byte/short/int/long - 0
+    float/double        - 0.0
+    char                - 0 or '\u0000'
+    boolean             - false
+    reference           - null
