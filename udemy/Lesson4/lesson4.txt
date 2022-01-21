@@ -1,0 +1,7 @@
+// Понятия «класс» и «объект». Знакомство со ссылочными типами данных
+
+Структура
+    package mypackage;      // пакет
+    import java.util.*;     // импорт
+    public class Lesson3 {  // наш класс(data, methods, constructors)
+    public static void main(String[] args) {
