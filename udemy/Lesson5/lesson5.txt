@@ -1,0 +1,11 @@
+// Создание объектов. Понятие «конструктор». Объявление и вызов методов
+
+Methods
+    public static void main(String[] args) {// code;}
+    public  // access modifier
+    static  // non-access modifier(s)
+    void    // retun type
+    main    // name
+    ()      // params
+    {}      // body
+
