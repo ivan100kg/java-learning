@@ -12,9 +12,13 @@ class Student{
     float math_grade;
     float eco_grade;
     float fore_grade;
+    
 }
 
 class StudentTest{
+    static float average(Student s){
+        return (s.math_grade+s.eco_grade+s.fore_grade)/3;
+    }
     public static void main(String[] args) {
         Student s1 = new Student();
         Student s2 = new Student();
@@ -42,14 +46,11 @@ class StudentTest{
         s3.fore_grade = 5;
         
         System.out.println(s1.first_name + " " + s1.last_name + ""
-                + ": average grade = " + (s1.math_grade+s1.eco_grade
-                + s1.fore_grade)/3);
+                + ": average grade = " + average(s1));
         System.out.println(s2.first_name + " " + s2.last_name + ""
-                + ": average grade = " + (s2.math_grade+s2.eco_grade
-                + s2.fore_grade)/3);
+                + ": average grade = " + average(s1));
         System.out.println(s3.first_name + " " + s3.last_name + ""
-                + ": average grade = " + (s3.math_grade+s3.eco_grade
-                + s3.fore_grade)/3);
+                + ": average grade = " + average(s1));
     }
     
 }
