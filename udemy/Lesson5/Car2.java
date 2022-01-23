@@ -2,6 +2,9 @@
 package Lesson5;
 
 public class Car2 {
+    Car2(){
+        System.out.println("Constructor");
+    }
     String color;
     String engine;
     int speed;
@@ -15,7 +18,7 @@ public class Car2 {
     }
     
     void show(){
-        System.out.println("color: "+color+" engine: "+engine+" speed: "+speed);
+        System.out.println("color: "+color+" engine: "+engine+"speed: "+speed);
     }
 }
 class TestCar2{
