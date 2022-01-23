@@ -9,3 +9,11 @@ Methods
     ()      // params
     {}      // body
 
+Constructor
+    Car car1 = new Car();   // Car() - constructor, as name of class
+    Car(){}                 // default constructor
+    Car(vars){code;}        // custom constructor
+    // конструктор ничего не возвращает
+    int salary(p1,p2){      // метод класса с 2-мя парам, возвращ int
+        return this.salary;
+    }
