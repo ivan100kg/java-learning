@@ -1,3 +1,40 @@
 // Перезагрузка методов и конструкторов (overloading). Ключевое слово this
 
+Overloading
+    // методы с одинак названиями, но разные параметры(типы/количество/порядок)
+       return type может быть одинаковым или различным
+       access modifier может быть одинаковым или различным(public/private/prot.)
+    void show(int i1){
+        System.out.println(i1);
+    }
+
+    void show(boolean b1){
+        System.out.println(b1);
+    }
+
+    int show(int i1, int i2){
+        System.out.println(i1+i2);
+        return i1_i2;
+    }
+
+Constructor overloading
+    // все то же самое что и для методов
+    Employee(String surname, int age){
+        this(surname);  // делегирование -+ чтобы не писать больше кода
+        this.age = age; //                | всегда на первой строке
+    }                   //                |
+                        //                |
+    Employee(String surname){   // <------+
+        this.surname = surname;
+    }
+
+    // более лучший способ, все конструкторы вызывают главный конструктор
+    Employee(String surname, int age){  // главный конструктор с большим кол
+        this.age = age;                    параметров, в этом конструкторе
+        this.surname = surname;            объявляем все поля
+    }                   
+
+    Employee(String surname){
+        this(surname, 0);   // вызов главного конструктора, передаем на неиз
+    }                          вестные переменные дефолтные значения
 
