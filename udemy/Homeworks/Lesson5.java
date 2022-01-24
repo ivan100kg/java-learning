@@ -68,5 +68,6 @@ class EmployeeTest{
         e1.showSalary();
         e2.doubleSalary();
         e2.showSalary();
+        e2.showSalary();
     }
 }
