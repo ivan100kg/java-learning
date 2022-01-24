@@ -1,10 +1,39 @@
 package Homeworks;
 
+import static Homeworks.StudentTest.average;
+
 public class Lesson4 {
     
 }
 
 class Student{
+    Student(int id,
+            String first_name,
+            String last_name,
+            int study_year,
+            float math_grade,
+            float eco_grade,
+            float fore_grade){
+        this.id = id;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.study_year = study_year;
+        this.math_grade = math_grade;
+        this.eco_grade = eco_grade;
+        this.fore_grade = fore_grade;
+    }
+    
+    Student(int id,
+            String first_name,
+            String last_name,
+            int study_year){
+        this(id,first_name,last_name,study_year,0,0,0);
+    }
+    
+    Student(){
+        this(0,null,null,0,0,0,0);
+    }
+    
     int id;
     String first_name;
     String last_name;
@@ -12,6 +41,15 @@ class Student{
     float math_grade;
     float eco_grade;
     float fore_grade;
+    
+    void info(){
+        System.out.println("id: "+ id);
+        System.out.println(first_name +" "+ last_name);
+        System.out.println("Study year: "+ study_year);
+        System.out.println("Math grade: "+ math_grade);
+        System.out.println("Economical grade: "+ eco_grade);
+        System.out.println("Foreign grade: "+ fore_grade);
+    }
     
 }
 
@@ -51,6 +89,15 @@ class StudentTest{
                 + ": average grade = " + average(s1));
         System.out.println(s3.first_name + " " + s3.last_name + ""
                 + ": average grade = " + average(s1));
+        
+        // homework 6
+        Student st1 = new Student(1,"Jon","Snow",1999,7.3f,8.6f,9.0f);
+        Student st2 = new Student(2,"Sansa","Stark",2006);
+        Student st3 = new Student();
+        
+        st1.info();
+        st2.info();
+        st3.info();
     }
     
 }
