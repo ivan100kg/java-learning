@@ -54,6 +54,7 @@ class Student{
 }
 
 class StudentTest{
+    // homework 5
     static float average(Student s){
         return (s.math_grade+s.eco_grade+s.fore_grade)/3;
     }
