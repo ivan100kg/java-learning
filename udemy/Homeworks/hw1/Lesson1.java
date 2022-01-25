@@ -10,7 +10,7 @@
                                   О. Хайям
 */
 
-package Homeworks;
+package Homeworks.hw1;
 
 public class Lesson1 {
 

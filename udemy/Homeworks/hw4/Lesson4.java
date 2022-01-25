@@ -1,6 +1,6 @@
-package Homeworks;
+package Homeworks.hw4;
 
-import static Homeworks.StudentTest.average;
+import static Homeworks.hw4.StudentTest.average;
 
 public class Lesson4 {
     
