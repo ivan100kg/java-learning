@@ -2,7 +2,7 @@ package Lesson6;
 
 public class Employee {
     // constructor overloading
-    Employee(int id, String surname, int age, double salary, 
+    public Employee(int id, String surname, int age, double salary, 
             String departament){
         System.out.println("0 constructor");        
         this.id = id;
@@ -12,19 +12,19 @@ public class Employee {
         this.departament = departament;
     }
     
-    Employee(int id, String surname, int age){
+    public Employee(int id, String surname, int age){
         this(id, surname, age, 0.0, null);
         System.out.println("1st constructor");        
 //        this.id = id;
     }
     
-    Employee(String surname, int age){
+    public Employee(String surname, int age){
         this(0, surname, age, 0.0, null);
         System.out.println("2nd constructor");
 //        this.age = age;
     }
     
-    Employee(String surname){
+    public Employee(String surname){
         this(0, surname, 0, 0.0, null);
         System.out.println("3rd constructor");
 //        this.surname = surname;
