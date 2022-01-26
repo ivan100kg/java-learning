@@ -1,3 +1,29 @@
 // Понятия «import» и «import static». Использование комментариев
 
+Два пакета
+    импорт по полн имени        с исп import
+    pack p1;                    pack p2;
+    class A{                    import p1.A;
+                                class B{   
+    p2.B b = new p2.B();        A a = new A();  // создание экз с друг пак
+    }                           } 
+
+import
+    import Lessons.Lesson1.Car; // импорт класса кар из пакета Lesson1,
+                                   вложенного в пакет Lessons
+    import Lessons.Lesson1.*;   // импорт всех public классов из пакета
+                                   при конфликтах имен - нужно указать 
+                                   полный путь к классу пакет.класс.
+                                   Не импортирует классы из влож пакетов.
+    import java.lang.*;         // дефолтный пакет, импортируемый по умолч.
+                                   включает имена System, String...
+    import static pak.Klas.var; // импорт статик переменной/метода отдельно
+    import static pak.Klas.*;   // all статик перем/методы отдельно
+
+Example
+    // 3 способа задать String
+    java.lang.String s1 = new java.lang.String("a");    
+    String s2 = new String("b");
+    String s3 = "c";
+
 

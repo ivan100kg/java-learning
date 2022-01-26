@@ -56,3 +56,12 @@ Versions
 	    }
     }
 
+Comments
+    // one line
+    /*
+       multiline
+    */
+    /**
+       JavaDoc comments
+    */
+
