@@ -12,7 +12,13 @@ public class Hw {
         Hw obj8 = new Hw();
         Hw obj9 = new Hw();
 
-        
+        obj1 = null;
+        obj2 = null;
+        obj3 = null;
+        obj4 = null;
+        obj5 = null;
+        obj6 = null;
+        obj7 = null;
     }    
 }
 
