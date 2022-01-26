@@ -1,0 +1,37 @@
+// Разновидности переменных и пределы их видимости
+
+Scope of variables
+    local       // локальные, видны только в одном блоке, после объявления
+    param       // параметр функции виден во всем теле ф-ии
+    instance    // переменная объекта, видна в классе и его не статик методах
+    static      // видна везде в классе + в статик методах.
+
+this    // указывает на текущий экземпляр(объект) класса, используется в классе
+           в non-static методах/конструкторах для обращения к переменным 
+           и методам.
+
+Идентификаторы
+    Начинается с буквы _ $
+    int __$__;
+    int $kjbcks;
+    int _ljncds;
+
+Зарезервированные слова
+    abstract assert boolean break byte case catch class const continue
+    default do double else enum extends false final float for goto if
+    implements import instanceof int interface long native new null package
+    private protected public return short static strictfp super switch 
+    synchronized this throw throws transient true try void volatile while
+
+Соглашения
+    классы      - с большой буквы, сущ, Car
+    переменные  - с маленькой буквы, сущ, color
+    методы      - camel case глагол, что делать, goAhead
+    final       - константы, все большие буквы, WHEIGHT
+
+Время существования
+    объекты существуют в памяти пока на них есть ссылки
+    obj = null; // оборвать связь вручную
+    После того как память осталась без ссылки ее убирает Garbage Collector
+    Управление GC находится под управлением JVM.
+
