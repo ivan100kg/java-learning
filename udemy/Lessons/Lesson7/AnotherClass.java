@@ -1,4 +1,4 @@
-package Lesson7;
+package Lessons.Lesson7;
 
 public class AnotherClass {
     public static void main(String[] args) {

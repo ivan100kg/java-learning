@@ -1,4 +1,4 @@
-package Lesson6;
+package Lessons.Lesson6;
 
 public class MethodOverloading2 {
     protected int sum(int a, int b){

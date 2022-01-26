@@ -1,5 +1,5 @@
 
-package Lesson5;
+package Lessons.Lesson5;
 
 public class Test20 {
     int sum(int a, int b, int c){

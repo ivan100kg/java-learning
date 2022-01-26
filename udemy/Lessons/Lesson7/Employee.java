@@ -1,4 +1,4 @@
-package Lesson7;
+package Lessons.Lesson7;
 
 public class Employee {
     protected double salary;

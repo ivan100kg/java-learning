@@ -1,5 +1,5 @@
 
-package Lesson5;
+package Lessons.Lesson5;
 
 public class Car2 {
     Car2(){

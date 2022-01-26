@@ -1,4 +1,4 @@
-package Lesson5;
+package Lessons.Lesson5;
 
 public class Human {
     String name;

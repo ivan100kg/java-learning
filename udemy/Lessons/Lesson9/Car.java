@@ -1,4 +1,4 @@
-package Lesson9;
+package Lessons.Lesson9;
 
 public class Car {
     private String color;

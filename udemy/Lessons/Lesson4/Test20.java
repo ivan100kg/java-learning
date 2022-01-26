@@ -1,5 +1,5 @@
 
-package Lesson4;
+package Lessons.Lesson4;
 
 public class Test20 {
     public static void main(String[] args) {

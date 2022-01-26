@@ -1,4 +1,4 @@
-package Lesson4;
+package Lessons.Lesson4;
 
 public class Car {
     Car(){System.out.println("Without params constructor");}    // default constructor

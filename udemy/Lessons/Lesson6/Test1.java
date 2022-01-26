@@ -1,4 +1,4 @@
-package Lesson6;
+package Lessons.Lesson6;
 
 public class Test1 {
     int sum(int a, int b, int c){

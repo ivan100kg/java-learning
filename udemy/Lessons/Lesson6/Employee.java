@@ -1,4 +1,4 @@
-package Lesson6;
+package Lessons.Lesson6;
 
 public class Employee {
     // constructor overloading
