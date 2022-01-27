@@ -11,12 +11,12 @@ public class StudentTest {
     }
 
     static void compareFields(Student st1, Student st2) {
-        if (st1.name == st2.name && st1.course == st2.course && st1.grade == st2.grade) {
+        if (st1.equals(st2) && st1.course == st2.course && st1.grade == st2.grade) {
             System.out.println("Students are equal");
 
         } else {
             System.out.println("Students are not equal");
-            if (st1.name != st2.name)
+            if (!st1.equals(st2))
                 System.out.println(st1.name + " != " + st2.name);
             if (st1.course != st2.course)
                 System.out.println(st1.course + " != " + st2.course);
