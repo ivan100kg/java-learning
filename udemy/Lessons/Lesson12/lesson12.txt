@@ -1,0 +1,40 @@
+// Конструкции «if» и «if else». Ternary оператор
+
+Flow control 
+    контроль хода программы
+    selection/выбор(ветвление)
+    looping/циклы
+
+if-else
+    // внутри if (boolean)
+    if (true){
+        code;
+    }
+    else if(!false){
+        code;
+    }
+    else {
+        code;
+    }
+
+logical operators
+    if (true && false || !false)
+
+Сравнения
+    int a = 5;
+    double b = 5.0;
+
+    a == b          // true, у примитивных сравнивается значение
+    obj1 == obj2    // false у ссылочных сравниваются адреса
+
+Метод equals
+    все классы по умолч имеют метод equals()
+    переопределяется самостоятельно в классах для сравнения объектов
+    String s1 = "Hello";
+    String s2 = "Hello";
+    s1 == s2;       // так не стоит, перегруж опрератор для String
+    s1.equals(s2);  // правильное сравнение объектов
+
+Ternary operator
+    (boolean expression) ? (if true) : (if false);
+    
