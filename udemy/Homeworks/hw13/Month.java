@@ -8,6 +8,7 @@ public class Month {
     }
 
     public int getCountOfDays(){
+        // data for 2015 year
         switch (month){
             case 1:
             case 3:
@@ -31,7 +32,7 @@ public class Month {
     }
 
     public static void main(String[] args) {
-        Month m = new Month(-2);
+        Month m = new Month(2);
         System.out.println(m.getCountOfDays());
     }
 }
