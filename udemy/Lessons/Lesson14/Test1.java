@@ -13,8 +13,8 @@ public class Test1 {
         System.out.println("Lesson 14");
         System.out.println("Lesson 14");
 
-        for (int i = 10; i > 0; i--) {
-            System.out.println(i+") Lesson 14(for)");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i + ") Lesson 14");  // the same
         }
     }
 }

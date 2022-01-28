@@ -1,0 +1,47 @@
+// Классический цикл «for». Выражения «break» и «continue»
+
+Циклы
+    for
+    while
+    do while
+    foreach
+
+for
+    for(initialization;condition;update){   // (;;) могут не заполняться
+        code;
+        break;      // выход из цикла
+        continue;   // след итерация
+    }
+    initialization  // (int i = 10, j = 20, ... , n = 100;) либо пустое
+    condition       // (;i<0 && j>8 || !false;) либо пустое
+    update          // (;j++, i++, square(i,j),...) либо пустое
+
+Unreachable statement
+    действует на циклы
+    недостижимое состояние - условие всегда должно быть достижимым по 
+    правилам Java
+    while (false)   // недостижимое состояние - компилятор не пропустит
+
+Loop statements
+    break;      // выход из цикла/тела/блока
+    continue;   // след итерация
+
+Nested loops
+    for (int hour=0; hour<24;hour++){
+         for(int min=0; min<60;min++){
+              for(int sec=0;sec<60;sec++){
+                 System.out.println(hour+":"+min+":"+sec);
+              }
+         }
+    }
+
+Labels of loops
+    Циклы можно именовать, чтобы управлять внешними из внутренних циклов
+    OUTER: for(int min=0; min<60;min++){
+        INNER: for(int sec=0;sec<60;sec++){
+            System.out.println(hour+":"+min+":"+sec);
+            if (sec == 20) {
+                break OUTER;    // выход из цикла по имени
+            }
+    }
+        }
