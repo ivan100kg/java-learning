@@ -1,8 +1,15 @@
 //  Конструкция «switch»
 
-switch (expression) {
-    case val1: code; break;
-    case val2: code; break;
-    case val2: code; break;
-    case default: code; break;
+switch (expression) {   // типы используемые в  выражении
+    case val1:             int byte short char String
+        code; 
+        break;
+    case val2: 
+        code;   
+        break;
+    case val2: 
+        code; 
+        break;
+    case default:   // выполняется в посл очередь, может быть вставлен выше
+        code; 
 }
