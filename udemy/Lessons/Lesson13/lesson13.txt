@@ -1,0 +1,8 @@
+//  Конструкция «switch»
+
+switch (expression) {
+    case val1: code; break;
+    case val2: code; break;
+    case val2: code; break;
+    case default: code; break;
+}
