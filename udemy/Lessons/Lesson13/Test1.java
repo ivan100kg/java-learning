@@ -14,17 +14,17 @@ class Student {
     public static void main(String[] args) {
         Student st1 = new Student(5);
 
-//        if (st1.grade == 2) {
-//            System.out.println("Student is terrible");
-//        } else if (st1.grade == 3) {
-//            System.out.println("Student is bad");
-//        } else if (st1.grade == 4) {
-//            System.out.println("Student is good");
-//        } else if (st1.grade == 5) {
-//            System.out.println("Student is brilliant");
-//        } else {
-//            System.out.println("Wrong grade");
-//        }
+/*        if (st1.grade == 2) {
+            System.out.println("Student is terrible");
+        } else if (st1.grade == 3) {
+            System.out.println("Student is bad");
+        } else if (st1.grade == 4) {
+            System.out.println("Student is good");
+        } else if (st1.grade == 5) {
+            System.out.println("Student is brilliant");
+        } else {
+            System.out.println("Wrong grade");
+        }*/
 
         switch ((int) st1.grade) {
             case 2:
