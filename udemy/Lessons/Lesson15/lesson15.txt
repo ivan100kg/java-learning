@@ -1,0 +1,5 @@
+// Циклы «while» и «do while»
+
+while (condition){  // condition - boolean
+    code;
+}
