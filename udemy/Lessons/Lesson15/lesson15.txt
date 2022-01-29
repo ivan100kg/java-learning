@@ -1,5 +1,17 @@
 // Циклы «while» и «do while»
 
-while (condition){  // condition - boolean
-    code;
-}
+while loop
+    while (condition){  // condition - boolean
+        code;
+    }
+
+do while loop
+    заходит в цикл минимум 1 раз
+    do{
+        code;
+    } while(condition);
+
+Labels for loops
+    the same as "for" loop
+    OUTER:while(true){}
+
