@@ -6,12 +6,14 @@ public class Hw15 {
 
         HOUR:
         while (hour < 6) {
+            min = -1;
             MIN:
             do {
+                min++;
                 if (hour > 1 && min % 10 == 0) {
                     break HOUR;
                 }
-                min++;
+                sec = 0;
                 SEC:
                 while (sec < 60) {
                     if (sec * hour > min) {
@@ -21,10 +23,10 @@ public class Hw15 {
                     sec++;
                 }
 
-                sec = 0;
+
             } while (min < 59);
             hour++;
-            min = -1;
+
         }
     }
 
