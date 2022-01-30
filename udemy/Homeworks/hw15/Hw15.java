@@ -1,25 +1,35 @@
-package Homeworks.hw14;
+package Homeworks.hw15;
 
-public class Hw14 {
-    static void time() {
+public class Hw15 {
+    static void time2() {
+        int hour = 0, min = -1, sec = 0;
+
         HOUR:
-        for (int hour = 0; hour < 6; hour++) {
+        while (hour < 6) {
             MIN:
-            for (int min = 0; min < 60; min++) {
+            do {
                 if (hour > 1 && min % 10 == 0) {
                     break HOUR;
                 }
-                for (int sec = 0; sec < 60; sec++) {
+                min++;
+                SEC:
+                while (sec < 60) {
                     if (sec * hour > min) {
                         continue MIN;
                     }
                     System.out.println(hour + ":" + min + ":" + sec);
+                    sec++;
                 }
-            }
+
+                sec = 0;
+            } while (min < 59);
+            hour++;
+            min = -1;
         }
     }
 
     public static void main(String[] args) {
-        time();
+        time2();
     }
+
 }
