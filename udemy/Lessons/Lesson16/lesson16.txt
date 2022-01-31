@@ -1,29 +1,40 @@
 // Всё о классе String
 
-pacage
+--- Package ---
     java.lang.*
 
-Creation
+--- Creation ---
     String s1 = new String("Hi");   // всегда нов объект с unique address
     String s2 = "Hi";               // помещ в String pool(если его еще не было)
     System.out.print("Hi");         // также берется или помещается в StringPool
                                        если уже есть такой объект - то получим
                                        еще 1 ссылку на него.
 
-String pool
+--- String pool ---
     Место в памяти в котором содерж разные объекты класса String.
     Новый объект класса String создается в String Pool только,
     если там еще нет подобного объекта.
 
- Difference
+--- Difference ---
     Объекты созданные с пом new всегда будут с разными адресами
     Объекты созданные по другому - могут ссылаться на один и тот же адрес.
 
-Char massive
+--- Char massive ---
     private final char {'h','e','l','l','o'};   // так String хранит значение
 
-String is immutable
+--- String is immutable ---
     String хранит свое значение в private final char массиве, с фиксированной 
     длиной. Ни один из методов класса String не изменяет индивидуальные
     элем массива char.
+
+--- String methods ---
+    lenght()    // -> int, symbols' count
+    charAt(i)   // -> char, what char at index 'i'
+    indexOf(c)  // -> int, position of char 'c'
+    indexOf(s)  // -> int, position of String 's'
+    indexOf(c,i)// -> int, position of char 'c' after index 'i'
+    indexOf(s,i)// -> int, position of String 's' after index 'i'
+                   -> -1, if not match
+
+
 
