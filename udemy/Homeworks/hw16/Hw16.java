@@ -4,12 +4,10 @@ public class Hw16 {
     public static void email(String s) {
         char c;
         for (int i = 0; i < s.length(); i++) {
-            c = s.charAt(i);
-            if (c == '@') {
+            if (s.charAt(i) == '@') {
                 i++;
                 while (s.charAt(i) != '.') {
-                    c = s.charAt(i);
-                    System.out.print(c);
+                    System.out.print(s.charAt(i));
                     i++;
                 }
                 System.out.println();
