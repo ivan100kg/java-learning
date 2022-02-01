@@ -19,6 +19,10 @@
     Объекты созданные с пом new всегда будут с разными адресами
     Объекты созданные по другому - могут ссылаться на один и тот же адрес.
 
+--- Comparsion ---
+    == !=   // сравнивает адреса у объектов
+    equals  // перезапис метод, у строк сравнивает именно содержимое строки
+
 --- Char massive ---
     private final char {'h','e','l','l','o'};   // так String хранит значение
 
@@ -28,13 +32,42 @@
     элем массива char.
 
 --- String methods ---
-    lenght()    // -> int, symbols' count
-    charAt(i)   // -> char, what char at index 'i'
-    indexOf(c)  // -> int, position of char 'c'
-    indexOf(s)  // -> int, position of String 's'
-    indexOf(c,i)// -> int, position of char 'c' after index 'i'
-    indexOf(s,i)// -> int, position of String 's' after index 'i'
-                   -> -1, if not match
+    lenght()        // -> int, symbols' count
+    charAt(i)       // -> char, what char at index 'i'
+    indexOf(c)      // -> int, position of char 'c'
+    indexOf(s)      // -> int, position of String 's'
+    indexOf(c,i)    // -> int, position of char 'c' after index 'i'
+    indexOf(s,i)    // -> int, position of String 's' after index 'i'
+                       -> -1, if not match
+    startsWith(s)   // -> boolean, start with String 's' or no
+    startsWith(s,i) // -> boolean, start with String 's' from ind 'i' or no
+    endWith(s)      // -> boolean, end with String 's' or no
+    subString(i)    // -> String, what string from index 'i' to end
+    subString(i,j)  // -> String, slice i:j from i(included) to j(not included)
+    trim()          // -> String, delete all whitespaces from end and beginning
+                          result - new String.
+    replace(c1,c2)  // -> char, replace old char 'c1' to new 'c2'
+    replace(s1,s2)  // -> String, replace old String 's1' to new 's2'
+    concat(s)       // -> String, concatenation, the same as  s1 + s2
+    toLowerCase()   // -> String, all letters convert to lower case
+    toUpperCase()   // -> String, all letters convert to Upper case
+    contains(s)     // -> boolean, does our String contains 's'?
+    equalsIgnoreCase// -> boolean?, comparsion with ignore case
 
+--- Конкатенация, неявное приведение типов ---
+    i1, i2  - int
+    s       - String
+    String + int = String
+    System.out.println(i1 + i2 + s);        // 11ok
+    System.out.println("" + i1 + i2 + s);   // 56ok
+    Если первым операндом стоит стринг, то все типы дальнейшие типы приводятся
+    к стрингу.
+    даже так:
+        System.out.println("" + null + false);  // nullfalse
+        String s1 = null;
+        System.out.println(s1 += "ok");         // nullok
 
+--- Chaining methods ---
+    много методов идут один за одним, выполняются слева направо
+    s1.concat(s2).trim().replace("Yah", "Wow").substring(6, 10);
 
