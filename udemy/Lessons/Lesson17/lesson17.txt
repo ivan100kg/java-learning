@@ -15,6 +15,9 @@
     StringBuilder sb3 = new StringBuilder(50);          // вместимость 50 симв
     StringBuilder sb4 = new StringBuilder(sb2);         // из другого объекта
                                                            копия, др адрес
+    StringBuilder sb5 = sb2;                            // тот же obj
+    String s = new String(sb1);                         // String можно делать
+                                                           из StringBuilder
 
 --- Methods ---
     length()        // -> int, длина(кол-во) симв
@@ -28,7 +31,22 @@
     append(type)    // -> StringBuilder, добавляет в конец люб тип данных,
                           меняет сам объект, также при вызове еще и возвращ себя
     insert(i,type)  // -> StringBuilder, также как выше, но в любую позицию
+    delete(i,j)     // -> StringBuilder, удаляет символы от [i до j)
+    deleteCharAt(i) // -> StringBuilder, удаляет символ в индексе 'i'
+    reverse()       // -> StringBuilder, переворачивает текст
+    replace(i,j,s)  // -> StringBuilder, вместо строки от i до j встав строку s
+    capcity()       // -> int, количество места в массиве
 
+--- Comparsion ---
+    StringBuilder sb3 = new StringBuilder("123");
+    StringBuilder sb4 = new StringBuilder("123");
+    System.out.println(sb3==sb4);           // false
+    System.out.println(sb3.equals(sb4));    // false, метод сравнивает адреса,
+                                               не перезаписан как в String
+
+--- StringBuffer ---
+    очень поохож но используется в многопоточных программах
+    String s = new String(sb1); // String можно делать из StringBuffer
 
 
 
