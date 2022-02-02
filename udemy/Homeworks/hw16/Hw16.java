@@ -15,12 +15,10 @@ public class Hw16 {
     }
 
     public static void email2(String s) {
-        String emails = "";
         while (s.contains("@")) {
-            emails += s.substring(s.indexOf('@') + 1, s.indexOf('.')) + '\n';
+            System.out.println(s.substring(s.indexOf('@') + 1, s.indexOf('.')));
             s = s.substring(s.indexOf('.') + 1);
         }
-        System.out.println(emails);
     }
 
     public static void main(String[] args) {
