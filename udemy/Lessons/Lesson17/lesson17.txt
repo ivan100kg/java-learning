@@ -18,6 +18,7 @@
     StringBuilder sb5 = sb2;                            // тот же obj
     String s = new String(sb1);                         // String можно делать
                                                            из StringBuilder
+    String s = new String(new char[]{'h','i'})          // из массива char
 
 --- Methods ---
     length()        // -> int, длина(кол-во) симв
