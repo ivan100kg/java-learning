@@ -32,6 +32,3 @@ public class Test1 {
         System.out.println(arr[0][0]);
     }
 }
-
-
-// 39:41
