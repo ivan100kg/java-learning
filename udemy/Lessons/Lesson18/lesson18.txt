@@ -13,21 +13,36 @@
                                            уже должен быть объявлен! Элементы
                                            массива заполн знач-ми типа по умолч
 
-    // declaration+allocation                                       
-    double[][] arr = new double[10][12];// 10 массивов, в кот массивы из 12 элем
-    double[][] arr = new double[10][];  // 10 мaссивов в которых содерж массивы
-                                           разн длины
-
     // initialization(static, dynamic)
     // static
     arr[0] = 1;
     arr[1] = 5;
     arr[2] = -80;
+    // dynamic
+    for (int i = 0; i < arr1.length; i++) { // дин иниц 2-мерного массива
+        for (int j = 0; j < arr1[i].length; j++) {
+            arr1[i][j] = i + j;
+        }
+    }
 
+    // declaration+allocation
+    double[][] arr = new double[10][12];// 10 массивов, в кот массивы из 12 элем
+    double[][] arr = new double[3][];   // 3 мaссива в которых содерж массивы
+                                           разн длины, должны быть позже alloc
+                                           arr[0] = new double[5];
+                                           arr[1] = new double[2];
+                                           arr[2] = new double[7];
+
+    // allocation+initialization
+    arr = new int[]{1,2,3};             // если int[] arr; был уже объявлен.
+
+    // declaration+allocation+initialization
+    // длина массива вычисляется автоматически
     int[] arr1 = {1,5,0,-3,5};          // массив из 5 элементов типа int
     String[] arr2 = {"hi","1","\n"};    // массив ссылок на адр String объектов
     int[][] arr3 = {{0,1,2},{3,4,5}};   // двумерный int массив
     char[][]...[] = {{{{{...}}}}};      // n-мерный массив
+
 
 
 --- Indexes ---
