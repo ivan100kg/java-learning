@@ -1,3 +1,8 @@
 // Параметры метода типа varargs. Аргументы типа command line. Цикл foreach.
 
+--- Компиляция и запуск из консоли ---
+    javac MyClass.java  // compile
+    java MyClass args   // execute with arguments args to main String[] args
 
+--- varargs ---
+    static void sum(int ... a)  // функция принимает любое кол-во эл
