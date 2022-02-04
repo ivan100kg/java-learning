@@ -1,0 +1,3 @@
+// Параметры метода типа varargs. Аргументы типа command line. Цикл foreach.
+
+
