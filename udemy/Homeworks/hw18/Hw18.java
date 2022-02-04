@@ -3,10 +3,11 @@ package Homeworks.hw18;
 public class Hw18 {
     public static int[] to_sort(int[] arr) {
         if (arr.length < 2) return arr;
+        int temp;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
                 if (i != j && arr[i] < arr[j]) {
-                    int temp = arr[i];
+                    temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
                 }
