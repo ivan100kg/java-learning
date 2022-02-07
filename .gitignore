@@ -1,5 +1,7 @@
 .idea/
+.vscode/
 *.json
 out/
 *.iml
 Training/
+skills.txt
