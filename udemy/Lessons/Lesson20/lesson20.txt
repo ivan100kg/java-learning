@@ -1,0 +1,25 @@
+// Всё о классе ArrayList
+
+Collections, произошел от List
+Может менять длину.
+
+Object
+Cамый главный класс в Java. От которого унаследованы все классы.
+
+
+
+
+Creation
+ArrayList по умолчанию включает в себя массив объектов класса Object.
+Т.е. элементами массва могут быть любые ссылочные типы данных, так как 
+все они произошли от Object.
+ArrayList list = new ArrayList();                   // ListArray Object
+ArrayList<Object> list = new ArrayList<>();         // the same as above
+ArrayList<Object> list = new ArrayList<Object>();   // the same as above
+
+Определенный тип данных(класс)
+ArrayList<String> list = new ArrayList<>(); // только String objects
+ArrayList<String> list = new ArrayList<>(8);// capacity = 8
+
+// 35:00
+
