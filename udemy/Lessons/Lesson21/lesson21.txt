@@ -1,0 +1,9 @@
+// Понятие «garbage collection»
+
+ternary
+    int a = 4;
+    int b = 5;
+    System.out.println(a < 4 ? "true" : "false");   // sout -> false
+    int c = a < 4 ? a++ : a--;                      // c=4, a=3
+
+// 10:20
