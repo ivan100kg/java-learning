@@ -6,4 +6,8 @@ ternary
     System.out.println(a < 4 ? "true" : "false");   // sout -> false
     int c = a < 4 ? a++ : a--;                      // c=4, a=3
 
-// 10:20
+garbage collector
+    Можно знать какие объекты могут быть удалены, но когда это будет сделано
+    gc решает самостоятельно.
+    System.gc() // совет коллектору удалить obj
+    finalize()  // вызывается колектором для удаления obj
