@@ -1,1 +1,6 @@
 // Инкапсуляция. Super Protected
+
+Getters-Setters
+
+
+// 16:30
