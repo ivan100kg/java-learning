@@ -3,20 +3,21 @@ package Lessons.Lesson22;
 public class Human {
     final String sex;
 
-    private String name;
+    private StringBuilder name;
     private int age;
     private int weight;
     private boolean clever;
 
-    Human(String sex) {
+    public Human(String sex) {
         this.sex = sex;
     }
 
-    public String getName() {
-        return name;
+    public StringBuilder getName() {
+        StringBuilder sb = new StringBuilder(name);
+        return sb;
     }
 
-    public void setName(String name) {
+    public void setName(StringBuilder name) {
         this.name = name;
     }
 
@@ -40,10 +41,10 @@ public class Human {
         return weight;
     }
 
-    public void showInfo(){
-        System.out.println("name: "+getName());
-        System.out.println("age: "+getAge());
-        System.out.println("weight: "+getWeight());
+    public void showInfo() {
+        System.out.println("name: " + getName());
+        System.out.println("age: " + getAge());
+        System.out.println("weight: " + getWeight());
     }
 
     public boolean isClever() {
@@ -57,10 +58,15 @@ public class Human {
 
 class Test {
     public static void main(String[] args) {
-        Human h = new Human("M");
-        h.setAge(39);
-        h.setName("Ivan");
-        h.setWeight(99);
-        h.showInfo();
+        Human h1 = new Human("M");
+        Human h2 = new Human("M");
+        h2.setName(new StringBuilder("Igor"));
+        h2.getName().append("123");
+        h2.showInfo();
+
+//        h.setAge(39);
+//        h.setName(new StringBuilder("Ivan"));
+//        h.setWeight(99);
+//        h.showInfo();
     }
 }
