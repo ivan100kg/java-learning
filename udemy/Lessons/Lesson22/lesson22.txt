@@ -1,6 +1,22 @@
 // Инкапсуляция. Super Protected
 
 Getters-Setters
+    private boolean clever;
+    public boolean isClever() {
+        return clever;
+    }
+    public void setClever(boolean clever) {
+        this.clever = clever;
+    }
+    private StringBuilder name;
+    public StringBuilder getName() {
+        StringBuilder sb = new StringBuilder(name); // чтобы не было возможности
+        return name;                                   изменить знач через get
+    }
+        public void setName(StringBuilder name) {
+        this.name = name;
+    }
+   Если return type метода get это mutable тип данных(напр StringBuilder),
+   то лучше возвращать его копию.
 
-
-// 16:30
+// 22:18
