@@ -32,7 +32,7 @@ class Human3 {
 
 class Student3 extends Human3 {
     Student3() {
-//        super();
+        this("Gizmo");
         System.out.println("Student3()");
     }
 
