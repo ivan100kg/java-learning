@@ -13,6 +13,7 @@ public class Test4 {
         Test4 t = new Test4();
         Animal an = new Mouse();
         t.foo(an);
+        an.showName();
     }
 
 }
