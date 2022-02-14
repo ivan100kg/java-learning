@@ -39,6 +39,7 @@ class Teacher3 extends Employee3 {
         System.out.println("Teacher sleeps");
     }
 
+    @Override
     Fruit eat() {
         System.out.println("Teacher eating");
         return new Fruit();
