@@ -21,5 +21,13 @@
     Конкретный класс - сабкласс кот перезаписал все абс методы.
 
 --- Interface ---
-
+    Java 7
+    interface Help{}    // создать интерфейс
+    Все методы в интерфейсах - public abstract, словa public abstract можно
+    опустить - компилятор их поставит авто.
+    class Teacher extends Employee implements Help  // осуществить интерфейс
+    class Teacher implements Help   // (без extends) осуществить интерфейс
+    class T extends E implements Help, Swim, ...    // many interfaces
+    Внутри класса осуществляюго интерфейс необходимо перезаписать абс методы
+    или сделать класс абстрактным(все как с абстрактными классами)
 // 36:30
