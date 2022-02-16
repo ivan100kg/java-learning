@@ -1,6 +1,18 @@
 package Lessons.Lesson24;
 
 public class Test3 {
+    public static void main(String[] args) {
+       /* Z z = new Z();
+        Swim_able s = new Z();
+        z.swim();
+        s.swim();*/
+
+        Help_able h = new Driver();
+        Swim_able s = new Driver();
+        Employee e = new Driver();
+
+        System.out.println(h.a);
+    }
 }
 
 class Employee {
@@ -38,8 +50,8 @@ class Teacher extends Employee implements Help_able {
     }
 
     @Override
-    public void water() {
-        System.out.println("Teacher is watering");
+    public void water(String s) {
+        System.out.println("Teacher is watering with " + s);
     }
 }
 
@@ -56,8 +68,8 @@ class Driver extends Employee implements Help_able, Swim_able {
     }
 
     @Override
-    public void water() {
-        System.out.println("Driver is watering");
+    public void water(String s) {
+        System.out.println("Driver is watering with " + s);
     }
 
     @Override
@@ -67,11 +79,29 @@ class Driver extends Employee implements Help_able, Swim_able {
 }
 
 interface Help_able {
+    int a = 10;
+
     void help();
 
-    void water();
+    void water(String thing);
 }
 
 interface Swim_able {
     void swim();
+}
+
+abstract class Y implements Swim_able{
+
+}
+
+abstract class X extends Y{
+
+}
+
+class Z extends Y {
+
+    @Override
+    public void swim() {
+        System.out.println("I finally did it!");
+    }
 }
