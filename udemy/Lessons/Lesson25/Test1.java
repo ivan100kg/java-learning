@@ -8,14 +8,14 @@ public class Test1 {
         Employee emp1 = new Teacher();
         Employee emp2 = new Driver();
         Employee emp3 = new Doctor();
-        HelpAble help = new Teacher();
+        /*HelpAble help = new Teacher();
 
         emp1.work();
         emp2.work();
         emp3.work();
-        /*emp1.help();
+        *//*emp1.help();
         emp2.help();
-        emp3.help();*/
+        emp3.help();*//*
 
         Driver[] arr1 = new Driver[2];
         Driver[] arr2 = {new Driver(), new Driver()};
@@ -31,7 +31,13 @@ public class Test1 {
         Employee[] arr5 = {emp1, emp2, emp3};
         for (Employee e : arr5){
             e.work();
-        }
+        }*/
+
+        System.out.println(emp1 instanceof Employee);
+        System.out.println(emp1 instanceof Teacher);
+        System.out.println(emp1 instanceof Driver);
+        System.out.println(emp1 instanceof HelpAble);
+        System.out.println(emp1 instanceof Object);
     }
 }
 
