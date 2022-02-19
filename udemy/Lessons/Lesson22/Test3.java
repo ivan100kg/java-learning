@@ -50,7 +50,7 @@ class Doctor extends Employee {
     }
 }
 
-class surgeon extends Doctor{
+class Surgeon extends Doctor{
     String knife;
     void operation(){
         System.out.println("I'll cut you!");
