@@ -1,6 +1,7 @@
 // Методы «equals» и  «toString». Wrapper классы
 
 --- equals ---
+    Метод класса Object.
     Перезаписать метод equals() у своего класса.
     @Override
     public boolean equals(Object obj) { // используем параметр Object
@@ -16,5 +17,73 @@
         -Симметричность для non-null ссылочных переменных a и b
          a.equals(b) возвращ true тогда и только тогда когда 
          b.equals(a) тоже возвращ true.
+        -Рефлективность - for non-null ссылочной переменной a.equals(a)
+         всегда должно возвращать true.
+        -Транзитивность - для non-null ссылочных переменных a,b,c - если
+         (a.equals(b) and b.equals(c)) == true --> то a.equals(c) дол быть true.
+        -Постоянство - для non-null ссыл перем a, b неоднократный вызов
+         a.equals(b) должно возвращ или только true или только false.
+        -Для non-null ссыл перем a, a.equals(null) дол возвр всегда false
 
-// 21:44
+--- toString ---
+    Метод класса Object.
+    Возвращает строковое представление объекта. 
+    По дефолту --> class_name@hashcode  // имя класса + @ + рез-т метода
+                                           hashcode().
+    System.out.print(obj) по умолчанию приводят obj к стоковому
+    представлению с помощью toString()
+    Перезапись:
+    @Override
+    public String toString(){
+        return color + " car with " + engine;
+    }
+
+--- Wrapper classes ---
+    Классы оборачивающие какие-то данные.
+    Позволяют примитивные типы данных использовать как классы.
+        primitive   wrapper
+        -----------------
+        byte        Byte
+        short       Short
+        int         Integer
+        long        Long
+        float       Float
+        double      Double
+        char        Char
+        boolean     Boolean
+    Autoboxing  - конвертирование соотв прим типа в класс.
+                  Integer i = 50;
+    Unboxing    - конвертирование объекта типа wrapper class to primitive.
+                  int a = i; (тот что выше)
+    class Number    // предок всех wrapper классов.
+    Methods:
+        parse(s)    // --> type, конвертация подходящего значения типа данных
+                       String(s) в соответствующий примитивный тип данных.
+                       int i1 = Integer.parseInt("50");
+        valueOf(x)  // --> wrapper, создать об wrapper класса того типа,
+                       на котором данный метод был вызван.
+                       Integer i3 = Integer.valueOf(10);    // в итоге 10
+                       Integer i4 = Integer.valueOf("10");
+
+--- Overloading, приоритетность методов ---
+    Если при вызове метода его параметр лист соотв-т нескольким парам-листам
+    овер методов, то приоритет таков:
+        1. точное совпадение типов.
+        2. большие типы данных для примитивных и super классы для ссылочных.
+        3. autoboxed types (wrapper классы).
+        4. varargs
+    Конвертация типов данных для соответствия списку параметров не может
+    происходить в 2 этапа, максимум 1 конвертация.
+
+--- Non-static and static initializers ---
+    Блок кода внутри класса, но не внутри метода.
+    Initializer block срабатывает при создании нового об соотв класса.
+    Static initializer block срабатывает 1 раз при загрузки класса в память.
+    {
+        System.out.println("Hello");    // initializer block 
+    }
+    Зачем нужеж:
+        срабатывает независимо от конструктора
+        их исользуют анонимные классы
+
+// 1:01:16
