@@ -1,1 +1,20 @@
 // Методы «equals» и  «toString». Wrapper классы
+
+--- equals ---
+    Перезаписать метод equals() у своего класса.
+    @Override
+    public boolean equals(Object obj) { // используем параметр Object
+        if (obj instanceof Car) {
+            Car c2 = (Car) obj;         // приводим тип/casting
+            return color.equals(c2.color) && engine.equals(c2.engine);
+        }
+        else {
+            return false;
+        }
+    }
+    Правильно перезаписанный метод должен обладать след св-вами:
+        -Симметричность для non-null ссылочных переменных a и b
+         a.equals(b) возвращ true тогда и только тогда когда 
+         b.equals(a) тоже возвращ true.
+
+// 21:44
