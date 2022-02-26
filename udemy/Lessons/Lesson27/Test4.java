@@ -3,8 +3,8 @@ package Lessons.Lesson27;
 import java.io.*;
 
 public class Test4 {
-    void abc() throws FileNotFoundException{
-        File f = new File("test10.txt");
+    void abc() throws FileNotFoundException {
+        File f = new File("test101.txt");
 //        try {
 //            FileInputStream fis = new FileInputStream(f);
 //        } catch (FileNotFoundException e) {
@@ -18,9 +18,12 @@ public class Test4 {
         System.out.println("Hi");
         try {
             abc();
-        }
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             System.out.println("Exception was caught " + e);
+//            System.out.println(e.getMessage());
+//            e.getStackTrace();
+//            e.fillInStackTrace();
+            e.printStackTrace();
         }
     }
 
@@ -40,6 +43,6 @@ public class Test4 {
 //        System.out.println("After block");
         Test4 t = new Test4();
         t.def();
-        t.abc();
+//        t.abc();
     }
 }
