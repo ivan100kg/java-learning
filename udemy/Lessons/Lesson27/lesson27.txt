@@ -41,6 +41,12 @@
         1. Или заключить вызов метода b в try/catch блоки
         2. Или/и объявить, что он может выбросить это checked исключение
            или super класс этого исключения - например Exception.
+    
+    Examples:
+    IllegalArgumentException    // можно выбрасывать в своем коде где идет
+                                   проверка аргументов
+    NumberFormatException       // наследник того что выше
+    IllegalStateException       // метод вызывается в неподходящее время.
 
 --- try/catch/finnaly ---
     Обработка исключений:
@@ -102,5 +108,7 @@
 --- Error ---
     Не стоит обрабатывать или объявлять - считается глупой затеей.
     Как и runtime exceptions считаются unchecked.
+    ExceptionInInitializerError // выбрасывается в статич элементах, когда при
+                                   их использовании выбрас runtime exception.
     
     
