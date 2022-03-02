@@ -1,0 +1,22 @@
+// Дни и время
+
+--- Date/Time ---
+    java.time       // package
+    LocalDate       // date: год, месяц, день
+    LocalTime       // time: час, минута, секунда, наносекунда
+    LocalDateTime   // date + time
+    now()           // метод этих классов - показыывает дату/время сейчас
+    Эти классы имеют private конструкторы, мы не можем создать объекты с 
+    помощью конструкторов. Но есть статический метод of, который возвращает
+    объект соотв-го класса.
+
+    of:
+    LocalDate ld = LocalDate.of(1983,1,23);             // date 1 вариант
+    LocalDate ld = LocalDate.of(1983,Month.JAN,23);     // date 2 вариант
+    LocalTime lt = LocalTime.of(hour,min[,сек,msec])    // time
+    LocalDateTime.of(year,mon,day,hour,min,sec,nanosec) // datetime
+    LocalDateTime ldt = LocalDateTime.of(ld,lt)         // из date и time
+
+    Exceptions:
+    DateTimeExceptions  // исключение если неправильная дата/время
+
