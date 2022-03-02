@@ -8,13 +8,17 @@ public class Hw27 {
             t.drink("water");
             try {
                 t.drink("beer");
-            } catch (Exception e) {
+            } catch (NoWaterException e) {
                 System.out.println(e.getMessage());
+            } catch (Exception e) {
+                System.out.println(e.getMessage() + "");
             } finally {
                 System.out.println("Inner finally");
             }
-        } catch (Exception e) {
+        } catch (RuntimeException e) {
             System.out.println(e.getMessage());
+        } catch (Exception e) {
+            System.out.println(e.getMessage() + "");
         }
     }
 }
