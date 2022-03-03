@@ -6,18 +6,27 @@
     LocalTime       // time: час, минута, секунда, наносекунда
     LocalDateTime   // date + time
     now()           // метод этих классов - показыывает дату/время сейчас
+    Period          // класс период можно передавать в метод plus()/minus()
+                       может принимать любые периоды в годах...днях
+                       используется с LocalDate, LocalDateTime.
+    Duration        // класс длительность, используется с LocalTime и 
+                       LocalDateTime, как Period но меньше - дни..наносек.
     Эти классы имеют private конструкторы, мы не можем создать объекты с 
     помощью конструкторов. Но есть статический метод of, который возвращает
     объект соотв-го класса.
     Объекты данных классов - immutable.(неизменяемые)
     Все их методы возвращают нов объекты.
-    
-    of:
+        
+    of: // создание объектов с пом статич метода of()
     LocalDate ld = LocalDate.of(1983,1,23);             // date 1 вариант
     LocalDate ld = LocalDate.of(1983,Month.JAN,23);     // date 2 вариант
     LocalTime lt = LocalTime.of(hour,min[,сек,msec])    // time
     LocalDateTime.of(year,mon,day,hour,min,sec,nanosec) // datetime
     LocalDateTime ldt = LocalDateTime.of(ld,lt)         // из date и time
+    Period p = Period.ofWeeks(2);                       // период=2 недели
+                                                           year - days
+    Duration d = Duration.ofHours(1);                   // длительность = 1 час
+                                                           days - nanosec
 
     Exceptions:
     DateTimeExceptions  // исключение если неправильная дата/время
@@ -26,11 +35,28 @@
     plusDays(long t)                // --> LocalDate, добавить дни
     minusDays(long t)               // --> LocalDate, отбавить дни
     plus/minus                      // the same: Months, Weeks, Years
-    LocallTme methods:
+    plus(Period p)                  // --> LocalDate прибавляет на период
+    minus(Period p)                 // --> LocalDate убавляет на период
+    getDayOfWeek()                  // --> DayOfWeek
+    getDayOfMonth()                 // --> int
+    getDayOfYear()                  // --> int, сначала года
+    getMonth()                      // --> Month
+    getYear()                       // --> int
+    
+    LocalTme methods:
     plusHours(long hours)           // --> LocalTime, добавить часы
     ...                             // Minutes, Seconds, Nanos
     minusNanos(long nsec)           // --> LocalTime, отбавить наносекунды
-    LocalDateTime methods           // охватывает все методы выше
+    plus(Duration d)                // --> LocalTime прибавляет на длительность
+    minus(Duration d)               // --> LocalTime убавляет на дрительность
+    getHour()                       // --> int... 
+    minute second
+    getNano()                       // --> int 
+    
+    LocalDateTime methods:           
+    ...                             // охватывает все методы выше
+
+    До и после(сравнивать только одинак классы):
     isAfter(t)                      // --> boolean, после этого?
     isBefore(t)                     // --> boolean, до этого?
 
