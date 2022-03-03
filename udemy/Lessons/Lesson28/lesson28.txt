@@ -9,7 +9,9 @@
     Эти классы имеют private конструкторы, мы не можем создать объекты с 
     помощью конструкторов. Но есть статический метод of, который возвращает
     объект соотв-го класса.
-
+    Объекты данных классов - immutable.(неизменяемые)
+    Все их методы возвращают нов объекты.
+    
     of:
     LocalDate ld = LocalDate.of(1983,1,23);             // date 1 вариант
     LocalDate ld = LocalDate.of(1983,Month.JAN,23);     // date 2 вариант
@@ -19,4 +21,16 @@
 
     Exceptions:
     DateTimeExceptions  // исключение если неправильная дата/время
+
+    LocalDate methods:
+    plusDays(long t)                // --> LocalDate, добавить дни
+    minusDays(long t)               // --> LocalDate, отбавить дни
+    plus/minus                      // the same: Months, Weeks, Years
+    LocallTme methods:
+    plusHours(long hours)           // --> LocalTime, добавить часы
+    ...                             // Minutes, Seconds, Nanos
+    minusNanos(long nsec)           // --> LocalTime, отбавить наносекунды
+    LocalDateTime methods           // охватывает все методы выше
+    isAfter(t)                      // --> boolean, после этого?
+    isBefore(t)                     // --> boolean, до этого?
 
