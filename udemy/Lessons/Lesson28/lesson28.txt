@@ -60,3 +60,57 @@
     isAfter(t)                      // --> boolean, после этого?
     isBefore(t)                     // --> boolean, до этого?
 
+    DateTimeFormatter
+    Класс работающий с временными классами - удобный формат вывода.
+    Нужно брать только ту инфу, которую включают классы.
+     
+    java.time.format.               // package 
+    // create with const vars
+    DateTimeFormatter d1 = DateTimeFormatter.ISO_LOCAL_DATE;    // стд вывод
+    DateTimeFormatter d2 = DateTimeFormatter.ISO_WEEK_DATE;     // 2022-W09-4
+    DateTimeFormatter t1 = DateTimeFormatter.ISO_LOCAL_TIME;
+    DateTimeFormatter dt1 = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
+    // create with methods
+    DateTimeFormatter sht = 
+        DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);   // 03.03.22 
+                                         (FormatStyle.FULL);    // full
+                                         (FormatStyle.MEDIUM);  // 03.03.2022
+        DateTimeFormatter.ofLocalizedTime()                     // similar
+        DateTimeFormatter.ofLocalizedDateTime()                 // similar
+    // use
+    System.out.println(d.format(d1));   // форматирование вывода для LocalDate
+    System.out.println(d1.format(d));   // the same,в Formatter тоже есть format
+    // свой формат
+    DateTimeFormatter f = DateTimeFormatter.ofPattern("MMMM dd, yyyy, hh:mm");
+        // марта 03, 2022, 07:29
+           y    2014    year
+           yy   14
+           yyyy 2014
+           M    3       month
+           MM   03      
+           MMM  мар
+           MMMM марта
+           w    1       week
+           ww   01      
+           d    9       day
+           dd   09
+           h    7       hour
+           hh   07
+           m    8       minute
+           mm   08      
+           s    30      second
+           ss   30
+           n    5555    nanoseconds
+           nnnnn    0555
+
+    parse()
+    Переводит дату/время из строки в объект времени, строка должна
+    соответствовать формату.
+    DateTimeFormatter f1 = DateTimeFormatter.ofPattern("yyyy.MM.dd");
+    LocalDate ld = LocalDate.parse("1983.01.23", f1);
+    System.out.println(ld); // 1983-01-23 - default format.
+    LocalDate ld = LocalDate.parse("1983-01-23");   // если строка в таком виде,
+                                                       то можно без форматтера.
+
+
+
