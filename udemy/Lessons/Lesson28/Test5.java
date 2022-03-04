@@ -9,7 +9,9 @@ public class Test5 {
         System.out.println(b.plus(p));
         Duration d = Duration.ofSeconds(12);
         LocalDateTime ldt1 = LocalDateTime.of(2015, Month.MAY, 10, 17, 25);
+        System.out.println(ldt1);
         System.out.println(ldt1.plus(d));
+        System.out.println(ldt1);
         System.out.println(ldt1.getDayOfWeek());
 
     }
