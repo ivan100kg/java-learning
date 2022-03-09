@@ -37,3 +37,13 @@
     () -> 5             // нет параметров, возврат int
     () -> {}            // без аргументов и без тела
 
+--- interface Predicate<T> ---
+    Функциональный интерфейс под любой тип данных, уже есть, не нужно объявлять
+    package: java.util.function.    
+    public interface Predicate<T> {
+        boolean test(T t);
+    }
+    Просто в параметре медода принимающего интерфейс написать Predicate<MyCl> t,
+    класс выбрать тот какой нужен.
+    arr.removeIf(x -> x.name.endsWith("a"));    // пример с ArrayList
+
