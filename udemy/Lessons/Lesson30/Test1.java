@@ -26,4 +26,5 @@ class B extends A{
         System.out.println("child static");
     }
 }
+// finish course
 
